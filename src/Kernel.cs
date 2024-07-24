@@ -1,6 +1,8 @@
 using System;
 using Sys = Cosmos.System;
 
+namespace terminal;
+
 public class Kernel : Sys.Kernel {
   protected override void BeforeRun() {
     Console.Writeline("Welcome to KawaiiOS! Type Help To Show All The Command List.");
