@@ -1,6 +1,6 @@
 using System;
 using Sys = Cosmos.System;
 
-namespace mainscreen;
+public class Kernel : Sys.Kernel {}
 
 
