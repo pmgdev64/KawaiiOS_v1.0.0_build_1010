@@ -9,7 +9,7 @@ public class Kernel : Sys.Kernel {
   }
 
   protected override void Run() {
-        Console.Write($"{_Prompt}> ");
+        Console.Write($"Root@KawaiiOS: ~$ ");
         var input = Console.ReadLine();
         string[] words = input.Split(' ');
         switch (words[0]) {
