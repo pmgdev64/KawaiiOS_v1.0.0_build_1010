@@ -25,7 +25,7 @@ public class Kernel : Sys.Kernel {
                 Sys.Power.Reboot(); // restart too
                 break;
             case "start":
-                
+                start_system();
             case "help":
                 // console methods are plugged
                 Console Writeline("<----------------Help Page--------------->");
@@ -44,6 +44,8 @@ public class Kernel : Sys.Kernel {
                 break;
       }
     public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/SansFont.ttf"), null);
+
+    private void start_system() {}
   }
 }
 
