@@ -24,14 +24,17 @@ public class Kernel : Sys.Kernel {
             case "restart":
                 Sys.Power.Reboot(); // restart too
                 break;
+            case "start":
+                
             case "help":
                 // console methods are plugged
-                Console Writeline("<----------------Help Page---------------q>");
+                Console Writeline("<----------------Help Page--------------->");
                 Console.WriteLine("cpu      - prints info about current cpu");
+                Console.WriteLine("start    - running the system")
                 Console.WriteLine("shutdown - shuts down current computer");
                 Console.WriteLine("restart  - restarts current computer");
                 Console.WriteLine("help     - shows this help menu");
-                Console.Writeline("install  - install the system into hard disk");
+                Console.Writeline("install (-s or --system) - install the system into hard disk");
                 break;
             case "install":
                 Console.WriteLine("cannot install because this function isn't added");
