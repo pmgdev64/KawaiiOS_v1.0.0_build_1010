@@ -7,5 +7,5 @@ to install, please read this installation guide to install the system:
 
 
 - ```install --system```
-- or 
-- ```install -s```
+or 
+ ```install -s```
