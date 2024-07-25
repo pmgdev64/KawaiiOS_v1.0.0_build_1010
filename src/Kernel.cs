@@ -34,7 +34,7 @@ public class Kernel : Sys.Kernel {
                 break;
             default:
                 // switch operator works great
-                Console.WriteLine($"\"{words[0]}\" is not a command");
+                Console.WriteLine($"<"{words[0]}>" Command Not Found!");
                 break;
       }
     public static Font OpenSans = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/OpenSans.ttf"), null);
