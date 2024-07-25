@@ -32,12 +32,14 @@ public class Kernel : Sys.Kernel {
                 Console.WriteLine("help     - shows this help menu");
                 Console.Writeline("install  - install the system into hard disk");
                 break;
+            case "install":
+                Console.WriteLine("cannot install because this function isn't added");
             default:
                 // switch operator works great
                 Console.WriteLine($"<"{words[0]}>" Command Not Found!");
                 break;
       }
-    public static Font OpenSans = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/OpenSans.ttf"), null);
+    public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/SansFont.ttf"), null);
   }
 }
 
