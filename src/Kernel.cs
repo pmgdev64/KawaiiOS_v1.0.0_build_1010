@@ -25,7 +25,7 @@ public class Kernel : Sys.Kernel {
                 break;
             case "help":
                 // console methods are plugged
-                Console Writeline("<Help Page>");
+                Console Writeline("<----------------Help Page---------------q>");
                 Console.WriteLine("cpu      - prints info about current cpu");
                 Console.WriteLine("shutdown - shuts down current computer");
                 Console.WriteLine("restart  - restarts current computer");
