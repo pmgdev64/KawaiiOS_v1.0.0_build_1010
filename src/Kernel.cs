@@ -1,6 +1,7 @@
 using System;
 using Cosmos.Core;
 using Sys = Cosmos.System;
+using Cosmos.Graphic.System;
 
 namespace KawaiiOS;
 
