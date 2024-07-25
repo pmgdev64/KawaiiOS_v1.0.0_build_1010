@@ -2,7 +2,7 @@ using System;
 using Cosmos.Core;
 using Sys = Cosmos.System;
 
-namespace terminal;
+namespace KawaiiOS;
 
 public class Kernel : Sys.Kernel {
   protected override void BeforeRun() {
