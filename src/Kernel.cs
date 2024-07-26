@@ -14,6 +14,8 @@ public class Kernel : Sys.Kernel {
         
     Console.Write($"Root@KawaiiOS: ~$ ");
     var input = Console.ReadLine();
+    string arg1 = "-s";
+    string arg2 = "--system";
     string[] words = input.Split(' ');
     switch (words[0]) {
         case "cpu":
