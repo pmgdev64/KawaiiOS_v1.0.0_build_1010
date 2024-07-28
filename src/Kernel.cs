@@ -7,6 +7,16 @@ namespace KawaiiOS;
 
 public class Kernel : Sys.Kernel {
   protected override void BeforeRun() {
+    Console.Writeline("
+  _  __                   _ _  ____   _____        __   ___   ___  
+ | |/ /                  (_|_)/ __ \ / ____|      /_ | / _ \ / _ \ 
+ | ' / __ ___      ____ _ _ _| |  | | (___   __   _| || | | | | | |
+ |  < / _` \ \ /\ / / _` | | | |  | |\___ \  \ \ / / || | | | | | |
+ | . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |
+ |_|\_\__,_| \_/\_/ \__,_|_|_|\____/|_____/    \_/ |_(_)___(_)___/ 
+                                                                   
+
+        ")
     Console.Writeline("Welcome to KawaiiOS! Type Help To Show All The Command List.");
   }
 
