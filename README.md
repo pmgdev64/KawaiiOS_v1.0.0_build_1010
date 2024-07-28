@@ -2,7 +2,7 @@
 The Operating systems based from cosmos.
 
 go to
-<a href="https://kawaiiproject.neocities.org">
+<a href="https://kawaiiproject.neocities.org">KawaiiProject</a>
 to get more information.
 
 to install, please read this installation guide to install the system:
