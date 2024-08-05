@@ -1,11 +1,56 @@
+﻿using Cosmos.Core;
+using Cosmos.System;
+using Cosmos.System.FileSystem;
+using Cosmos.System.FileSystem.VFS;
+using Cosmos.System.Graphics;
 using System;
-using Cosmos.Core;
+using System.Collections.Generic;
+using System.Drawing;
 using Sys = Cosmos.System;
-using Cosmos.Graphic.System;
 
 namespace KawaiiOS;
 
 public class Kernel : Sys.Kernel {
+  public static uint screenWidth = 640;
+  public static uint screenHeight = 480;
+  public static DoubleBufferedVMWareSVGAII vMWareSVGAII;
+  Bitmap bitmap;
+  public static Bitmap programlogo;
+  Bitmap bootBitmap;
+
+  int[] cursor = new int[]
+      {
+          1,0,0,0,0,0,0,0,0,0,0,0,
+          1,1,0,0,0,0,0,0,0,0,0,0,
+          1,2,1,0,0,0,0,0,0,0,0,0,
+          1,2,2,1,0,0,0,0,0,0,0,0,
+          1,2,2,2,1,0,0,0,0,0,0,0,
+          1,2,2,2,2,1,0,0,0,0,0,0,
+          1,2,2,2,2,2,1,0,0,0,0,0,
+          1,2,2,2,2,2,2,1,0,0,0,0,
+          1,2,2,2,2,2,2,2,1,0,0,0,
+          1,2,2,2,2,2,2,2,2,1,0,0,
+          1,2,2,2,2,2,2,2,2,2,1,0,
+          1,2,2,2,2,2,2,2,2,2,2,1,
+          1,2,2,2,2,2,2,1,1,1,1,1,
+          1,2,2,2,1,2,2,1,0,0,0,0,
+          1,2,2,1,0,1,2,2,1,0,0,0,
+          1,2,1,0,0,1,2,2,1,0,0,0,
+          1,1,0,0,0,0,1,2,2,1,0,0,
+          0,0,0,0,0,0,1,2,2,1,0,0,
+          0,0,0,0,0,0,0,1,1,0,0,0
+      };
+
+  LogView logView;
+  Clock Clock;
+  Notepad notepad;
+  Dock dock;
+  public static bool Pressed;
+
+  public static List<App> apps = new List<App>();
+
+  public static Color avgCol;
+  
   protected override void BeforeRun() {
     Console.Writeline('''
   _  __                   _ _  ____   _____        __   ___   ___  
