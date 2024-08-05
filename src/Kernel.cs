@@ -103,7 +103,51 @@ public class Kernel : Sys.Kernel {
       }
     public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/SansFont.ttf"), null);
 
-    private void start_system() {}
+    private void start_system() {
+      CosmosVFS cosmosVFS = new CosmosVFS();
+      VFSManager.RegisterVFS(cosmosVFS);
+
+      bootBitmap = new Bitmap(@"0:\boot.bmp");
+
+      vMWareSVGAII = new DoubleBufferedVMWareSVGAII();
+      vMWareSVGAII.SetMode(screenWidth, screenHeight);
+
+      vMWareSVGAII.DoubleBuffer_DrawImage(bootBitmap, 640 / 4, 0);
+      vMWareSVGAII.DoubleBuffer_Update();
+
+      bitmap = new Bitmap(@"0:\timg.bmp");
+      programlogo = new Bitmap(@"0:\program.bmp");
+
+      uint r = 0;
+      uint g = 0;
+      uint b = 0;
+      for (uint i = 0; i < bitmap.rawData.Length; i++)
+          {
+              Color color = Color.FromArgb(bitmap.rawData[i]);
+              r += color.R;
+              g += color.G;
+              b += color.B;
+          }
+      avgCol = Color.FromArgb((int)(r / bitmap.rawData.Length), (int)(g / bitmap.rawData.Length), (int)(b / bitmap.rawData.Length));
+
+      MouseManager.ScreenWidth = screenWidth;
+      MouseManager.ScreenHeight = screenHeight;
+      MouseManager.X = screenWidth / 2;
+      MouseManager.Y = screenHeight / 2;
+
+      logView = new LogView(300, 200, 10, 30);
+      Clock = new Clock(200, 200, 400, 200);
+      notepad = new Notepad(200, 100, 10, 300);
+      dock = new Dock();
+
+      apps.Add(logView);
+      apps.Add(Clock);
+      apps.Add(notepad);
+
+      enter_desktop();
+    }
+    private void enter_desktop() {}
+    }
   }
 }
 
