@@ -107,7 +107,7 @@ public class Kernel : Sys.Kernel {
       CosmosVFS cosmosVFS = new CosmosVFS();
       VFSManager.RegisterVFS(cosmosVFS);
 
-      bootBitmap = new Bitmap(@"0:\boot.bmp");
+      bootBitmap = new Bitmap(@"0:\resource\boot.bmp");
 
       vMWareSVGAII = new DoubleBufferedVMWareSVGAII();
       vMWareSVGAII.SetMode(screenWidth, screenHeight);
@@ -115,8 +115,8 @@ public class Kernel : Sys.Kernel {
       vMWareSVGAII.DoubleBuffer_DrawImage(bootBitmap, 640 / 4, 0);
       vMWareSVGAII.DoubleBuffer_Update();
 
-      bitmap = new Bitmap(@"0:\timg.bmp");
-      programlogo = new Bitmap(@"0:\program.bmp");
+      bitmap = new Bitmap(@"0:\resource\background.bmp");
+      programlogo = new Bitmap(@"0:\resource\program.bmp");
 
       uint r = 0;
       uint g = 0;
