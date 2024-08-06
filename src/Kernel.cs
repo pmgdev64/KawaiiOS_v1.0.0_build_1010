@@ -146,9 +146,46 @@ public class Kernel : Sys.Kernel {
 
       enter_desktop();
     }
-    private void enter_desktop() {}
+    private void enter_desktop() {
+      switch (MouseManager.MouseState)
+        {
+          case MouseState.Left:
+              Pressed = true;
+              break;
+          case MouseState.None:
+              Pressed = false;
+              break;
+        }
+
+        vMWareSVGAII.DoubleBuffer_Clear((uint)Color.Black.ToArgb());
+        vMWareSVGAII.DoubleBuffer_SetVRAM(bitmap.rawData, (int)vMWareSVGAII.FrameSize);
+        logView.text = $"Time: {DateTime.Now}\nInstall RAM: {CPU.GetAmountOfRAM()}MB, Video RAM: {vMWareSVGAII.Video_Memory.Size}Bytes";
+        foreach (App app in apps)
+        app.Update();
+
+        dock.Update();
+
+        DrawCursor(vMWareSVGAII, MouseManager.X, MouseManager.Y);
+
+        vMWareSVGAII.DoubleBuffer_U
+      }
+      public void draw_cursor(DoubleBufferedVMWareSVGAII vMWareSVGAII, uint x, uint y) {
+        for (uint h = 0; h < 19; h++)
+            {
+              for (uint w = 0; w < 12; w++)
+                {
+                  if (cursor[h * 12 + w] == 1)
+                    {
+                      vMWareSVGAII.DoubleBuffer_SetPixel(w + x, h + y, (uint)Color.Black.ToArgb());
+                    }
+                  if (cursor[h * 12 + w] == 2)
+                    {
+                      vMWareSVGAII.DoubleBuffer_SetPixel(w + x, h + y, (uint)Color.White.ToArgb());
+                    }
+                }
+            }
+        }
     }
   }
 }
-
 
