@@ -14,3 +14,4 @@ or
 
 - after you press enter, the setup has displayed like this: 
 <img src="images_not_found.png">
+<ul>(the image has not displayed because the images is not captured)</ul>
