@@ -13,3 +13,4 @@ or
  ```install -s```
 
 - after you press enter, the setup has displayed like this: 
+<img src="images_not_found.png">
