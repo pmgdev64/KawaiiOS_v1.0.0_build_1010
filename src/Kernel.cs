@@ -66,7 +66,10 @@ public class Kernel : Sys.Kernel {
   }
 
   protected override void Run() {
-        
+    CustomConsole.WriteLineInfo("Loading files...");
+    Files.LoadFiles();
+
+    CustomConsole.WriteLineInfo("Checking for autostart.bat script...");
     Console.Write($"Root@KawaiiOS: ~$ ");
     var input = Console.ReadLine();
     string arg1 = "-s";
@@ -98,9 +101,15 @@ public class Kernel : Sys.Kernel {
             Console.WriteLine("cannot install because this function isn't added");
         default:
             // switch operator works great
-            Console.WriteLine($"<"{words[0]}>" Command Not Found!");
+            Console.WriteLine($"<"{words[0]}>" is not a recognized command, operable function or scripts");
             break;
-      }
+    }
+    if (File.Exists(CurrentDirectory + "autostart.bat"))
+    {
+          CustomConsole.WriteLineOK("Detected autostart script, starting autostart.bat....");
+
+          Batch.Execute(CurrentDirectory + "autostart.bat");
+    }    
     public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/SansFont.ttf"), null);
 
     private void start_system() {
@@ -185,6 +194,7 @@ public class Kernel : Sys.Kernel {
                 }
             }
         }
+      public void play_media_files(file_types, media_types) {} 
     }
   }
 }
