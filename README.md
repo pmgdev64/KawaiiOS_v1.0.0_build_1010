@@ -11,3 +11,5 @@ to install, please read this installation guide to install the system:
  ```install --system```
 or 
  ```install -s```
+
+- after you press enter, the setup has displayed like this: 
