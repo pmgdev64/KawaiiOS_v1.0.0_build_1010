@@ -17,6 +17,7 @@ public class Kernel : Sys.Kernel {
   public static string defaultpassword = "12345678";
   public static string arg1 = "-s";
   public static string arg2 = "--system";
+  public static bool IsInstalled = false;
   public static DoubleBufferedVMWareSVGAII vMWareSVGAII;
   Bitmap bitmap;
   public static Bitmap programlogo;
