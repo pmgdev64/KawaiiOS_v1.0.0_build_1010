@@ -82,6 +82,8 @@ public class Kernel : Sys.Kernel {
         case "shutdown":
             Sys.Power.Shutdown(); // shutdown is supported
             break;
+        case "sysinfo": // a.k.a neofetch
+            Console.WriteLine("not recognized");
         case "restart":
             Sys.Power.Reboot(); // restart too
             break;
