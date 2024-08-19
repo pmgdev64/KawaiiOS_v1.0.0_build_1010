@@ -13,6 +13,10 @@ namespace KawaiiOS;
 public class Kernel : Sys.Kernel {
   public static uint screenWidth = 640;
   public static uint screenHeight = 480;
+  public static string defaultuser = "root";
+  public static string defaultpassword = "12345678";
+  public static string arg1 = "-s";
+  public static string arg2 = "--system";
   public static DoubleBufferedVMWareSVGAII vMWareSVGAII;
   Bitmap bitmap;
   public static Bitmap programlogo;
@@ -70,10 +74,8 @@ public class Kernel : Sys.Kernel {
     Files.LoadFiles();
 
     CustomConsole.WriteLineInfo("Checking for autostart.bat script...");
-    Console.Write($"Root@KawaiiOS: ~$ ");
+    Console.Write($ defaultuser+"@KawaiiOS: ~$ ");
     var input = Console.ReadLine();
-    string arg1 = "-s";
-    string arg2 = "--system";
     string[] words = input.Split(' ');
     switch (words[0]) {
         case "cpu":
