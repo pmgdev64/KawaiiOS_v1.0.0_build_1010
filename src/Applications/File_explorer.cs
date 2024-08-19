@@ -3,5 +3,5 @@ using System.Drawing;
 
 namespace kawaiios.application.file_explorer 
 {
-  class file_explorer:App {}
+  class File_explorer:App {}
 }
