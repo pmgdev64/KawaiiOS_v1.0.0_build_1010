@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace kawaiios.CosmosDrawString
+namespace kawaiios.system.CosmosDrawString
 {
     public static class ASC16
     {
