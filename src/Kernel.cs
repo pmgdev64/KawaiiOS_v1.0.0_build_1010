@@ -68,6 +68,13 @@ public class Kernel : Sys.Kernel {
 
         ''')
     Console.Writeline("Welcome to KawaiiOS! Type Help To Show All The Command List.");
+    var user = Console.ReadLine();
+
+    if(user == "root") {
+      var password = console.readline();
+      if(password == "12345678") {
+        Console.WriteLine("you have logged in as default");@
+
   }
 
   protected override void Run() {
