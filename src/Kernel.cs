@@ -210,6 +210,27 @@ public class Kernel : Sys.Kernel {
             }
         }
       public void play_media_files(file_types, media_types) {} 
+      public static void BSOD(string exception_text)
+        {
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
+            for (int i = 0; i <= 100; i++)
+            {
+                Console.WriteLine(":(");
+                Console.WriteLine("Your PC ran into a problem and need to restart");
+                Console.WriteLine();
+                Console.WriteLine("For more infomation about this issue and possiable fixes, visit: https://www.github.com/Codedev/TerminalOS [You can create issue]");
+                Console.WriteLine("If you call a support person, give them this info: ");
+                Console.WriteLine("Error Code: " + exception_text);
+                Console.WriteLine("Collecting info: " + i + "%");
+                System.Threading.Thread.Sleep(1000);
+                Console.Clear();
+            }
+            Console.WriteLine("Please press Enter key to reboot");
+            Console.ReadLine();
+            Sys.Power.Reboot();
+      }
     }
   }
 }
