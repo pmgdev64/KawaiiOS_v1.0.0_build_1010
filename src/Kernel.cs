@@ -49,6 +49,7 @@ public class Kernel : Sys.Kernel {
   LogView logView;
   Clock Clock;
   Notepad notepad;
+  File_explorer file_explorer;
   Dock dock;
   public static bool Pressed;
 
@@ -57,6 +58,7 @@ public class Kernel : Sys.Kernel {
   public static Color avgCol;
   
   protected override void BeforeRun() {
+    Console.Clear();
     Console.Writeline('''
   _  __                   _ _  ____   _____        __   ___   ___  
  | |/ /                  (_|_)/ __ \ / ____|      /_ | / _ \ / _ \ 
@@ -73,8 +75,7 @@ public class Kernel : Sys.Kernel {
     if(user == "root") {
       var password = console.readline();
       if(password == "12345678") {
-        Console.WriteLine("you have logged in as default");@
-
+        Console.WriteLine("you have logged in as default");
   }
 
   protected override void Run() {
@@ -159,11 +160,13 @@ public class Kernel : Sys.Kernel {
       logView = new LogView(300, 200, 10, 30);
       Clock = new Clock(200, 200, 400, 200);
       notepad = new Notepad(200, 100, 10, 300);
+      file_explorer = new File_explorer(200, 100, 10, 300);
       dock = new Dock();
 
       apps.Add(logView);
       apps.Add(Clock);
       apps.Add(notepad);
+      apps.Add(file_explorer);
 
       enter_desktop();
     }
