@@ -18,6 +18,7 @@ public class Kernel : Sys.Kernel {
   public static string arg1 = "-s";
   public static string arg2 = "--system";
   public static bool IsInstalled = false;
+  public readonly string exception_text;
   public static DoubleBufferedVMWareSVGAII vMWareSVGAII;
   Bitmap bitmap;
   public static Bitmap programlogo;
