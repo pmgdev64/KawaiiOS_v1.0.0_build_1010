@@ -1,6 +1,10 @@
 # KawaiiOS_v1.0.0_build_1010
 The Operating systems based from cosmos.
-[!KawaiiProject](https://img.shields.io/badge/kawaiiproject-org?logoColor=%23abcdef&link=https%3A%2F%2Fkawaiiproject.neocities.org)]
+
+
+[![KawaiiProject]
+(https://img.shields.io/badge/kawaiiproject-org?logoColor=%23abcdef&link=https%3A%2F%2Fkawaiiproject.neocities.org)]
+
 
 go to
 <a href="https://kawaiiproject.neocities.org">KawaiiProject</a>
