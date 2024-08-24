@@ -1,3 +1,4 @@
+// this application doesn't run on old version
 using kawaiios.system.CosmosDrawString;
 using System.Drawing;
 
