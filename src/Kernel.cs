@@ -71,12 +71,7 @@ public class Kernel : Sys.Kernel {
 
         ''')
     Console.Writeline("Welcome to KawaiiOS! Type Help To Show All The Command List.");
-    var user = Console.ReadLine();
-
-    if(user == "root") {
-      var password = console.readline();
-      if(password == "12345678") {
-        Console.WriteLine("you have logged in as default");
+    Console.WriteLine("[!] you have logged in as default user");
   }
 
   protected override void Run() {
@@ -101,11 +96,15 @@ public class Kernel : Sys.Kernel {
             break;
         case "start":
             start_system();
+        case "cls":
+            Console.Clear();
         case "help":
             // console methods are plugged
             Console Writeline("<----------------Help Page--------------->");
+            Console.WriteLine("[For more information, visit https://kawaiiproject.neocities.org]");
             Console.WriteLine("cpu      - prints info about current cpu");
             Console.WriteLine("start    - running the system")
+            Console.WriteLine("cls      - clear the terminal")
             Console.WriteLine("shutdown - shuts down current computer");
             Console.WriteLine("restart  - restarts current computer");
             Console.WriteLine("help     - shows this help menu");
