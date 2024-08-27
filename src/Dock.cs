@@ -19,7 +19,7 @@ namespace kawaiios.system.dock
             string text = "PowerOFF";
             uint strX = 2;
             uint strY = (20 - 16) / 2;
-            Kernel.vMWareSVGAII._DrawACSIIString("PowerOFF", (uint)Color.White.ToArgb(), strX, strY);
+            Kernel.vMWareSVGAII._DrawACSIIString("PowerOFF", (uint)Color.Red.ToArgb(), strX, strY);
             if (Kernel.Pressed)
             {
                 if (MouseManager.X > strX && MouseManager.X < strX + (text.Length * 8) && MouseManager.Y > strY && MouseManager.Y < strY + 16)
