@@ -60,16 +60,13 @@ public class Kernel : Sys.Kernel {
   
   protected override void BeforeRun() {
     Console.Clear();
-    Console.Writeline('''
-  _  __                   _ _  ____   _____        __   ___   ___  
- | |/ /                  (_|_)/ __ \ / ____|      /_ | / _ \ / _ \ 
- | ' / __ ___      ____ _ _ _| |  | | (___   __   _| || | | | | | |
- |  < / _` \ \ /\ / / _` | | | |  | |\___ \  \ \ / / || | | | | | |
- | . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |
- |_|\_\__,_| \_/\_/ \__,_|_|_|\____/|_____/    \_/ |_(_)___(_)___/ 
+    Console.WriteLine(" _  __                   _ _  ____   _____        __   ___   ___  ");
+    Console.WriteLine("| |/ /                  (_|_)/ __ \ / ____|      /_ | / _ \ / _ \ ");
+    Console.WriteLine("| ' / __ ___      ____ _ _ _| |  | | (___   __   _| || | | | | | |");
+    Console.Writeline("|  < / _` \ \ /\ / / _` | | | |  | |\___ \  \ \ / / || | | | | | |");
+    Console.WriteLine("| . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |");
+    Console.WriteLine("|_|\_\__,_| \_/\_/ \__,_|_|_|\____/|_____/    \_/ |_(_)___(_)___/ ");
                                                                    
-
-        ''')
     Console.Writeline("Welcome to KawaiiOS! Type Help To Show All The Command List.");
     Console.WriteLine("[!] you have logged in as default user");
   }
