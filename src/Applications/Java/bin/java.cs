@@ -1,5 +1,5 @@
 using system;
 
 namespace kawaiios.executable.java {
-  class java {}
+  class java:executable {}
 }
