@@ -1,5 +1,5 @@
 using system;
-using kawaiios.java.libraries.sys
+using kawaiios.java.libraries;
 
 namespace kawaiios.executable.java {
   class java:executable {}
