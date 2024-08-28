@@ -138,9 +138,9 @@ public class Kernel : Sys.Kernel {
       bitmap = new Bitmap(@"0:\Resources\background.bmp");
       programlogo = new Bitmap(@"0:\Resources\Dakirby309-Simply-Styled-Default-Programs-1.bmp");
 
-      uint r = 0;
-      uint g = 0;
-      uint b = 0;
+      uint r = 66;
+      uint g = 212;
+      uint b = 245;
       for (uint i = 0; i < bitmap.rawData.Length; i++)
           {
               Color color = Color.FromArgb(bitmap.rawData[i]);
