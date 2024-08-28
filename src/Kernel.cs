@@ -67,7 +67,7 @@ public class Kernel : Sys.Kernel {
     Console.WriteLine("| . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |         Version: 1.0.0 | build: 1010");
     Console.WriteLine("|_|\_\__,_| \_/\_/ \__,_|_|_|\____/|_____/    \_/ |_(_)___(_)___/                                      ");
                                                                    
-    Console.Writeline("Welcome to KawaiiOS! Type [Help] To Show All The Command List.");
+    Console.Writeline("[!] Welcome to KawaiiOS! Type [Help] To Show All The Command List.");
     Console.WriteLine("[!] you have logged in as default user");
   }
 
