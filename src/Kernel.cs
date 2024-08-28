@@ -60,11 +60,12 @@ public class Kernel : Sys.Kernel {
   
   protected override void BeforeRun() {
     Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine(" _  __                   _ _  ____   _____        __   ___   ___                                       ");
     Console.WriteLine("| |/ /                  (_|_)/ __ \ / ____|      /_ | / _ \ / _ \                                      ");
     Console.WriteLine("| ' / __ ___      ____ _ _ _| |  | | (___   __   _| || | | | | | |                                     ");
-    Console.Writeline("|  < / _` \ \ /\ / / _` | | | |  | |\___ \  \ \ / / || | | | | | |         Created By Pmg Dev @ Nexon  ");
-    Console.WriteLine("| . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |         Version: 1.0.0 | build: 1010");
+    Console.Writeline("|  < / _` \ \ /\ / / _` | | | |  | |\___ \  \ \ / / || | | | | | |         "+ ConsoleColor.Green +"Created By Pmg Dev @ Nexon");
+    Console.WriteLine("| . \ (_| |\ V  V / (_| | | | |__| |____) |  \ V /| || |_| | |_| |         "+ ConsoleColor.Red + "Version: 1.0.0 | build: 1010");
     Console.WriteLine("|_|\_\__,_| \_/\_/ \__,_|_|_|\____/|_____/    \_/ |_(_)___(_)___/                                      ");
                                                                    
     Console.Writeline("[!] Welcome to KawaiiOS! Type [Help] To Show All The Command List.");
