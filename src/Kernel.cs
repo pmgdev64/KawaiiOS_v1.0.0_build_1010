@@ -17,6 +17,7 @@ public class Kernel : Sys.Kernel {
   public static string defaultpassword = "12345678";
   public static string arg1 = "-s";
   public static string arg2 = "--system";
+  public static string defaultdirectory = "/system/x86-84";
   public static bool IsInstalled = false;
   public readonly string exception_text;
   public static DoubleBufferedVMWareSVGAII vMWareSVGAII;
@@ -96,6 +97,13 @@ public class Kernel : Sys.Kernel {
             start_system();
         case "cls":
             Console.Clear();
+        case "mkfike" + words[0]:
+            try {
+              Console.WriteLine("[!] operation completed successfully.");
+            }
+            catch(exeption e.x) {
+              Console.WriteLine("[!] operation failed");
+            }
         case "help":
             // console methods are plugged
             Console Writeline("<----------------Help Page--------------->");
