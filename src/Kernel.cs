@@ -97,7 +97,7 @@ public class Kernel : Sys.Kernel {
             start_system();
         case "cls":
             Console.Clear();
-        case "mkfike" + words[0]:
+        case "mkfike" + input:
             try {
               Console.WriteLine("[!] operation completed successfully.");
             }
