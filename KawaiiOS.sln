@@ -1,1 +1,28 @@
-
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KawaiiOS V1.0.0 | build 1010", "src\KawaiiOS.csproj", "{7B078991-05EA-4B59-B502-D9CEFB30D9CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B078991-05EA-4B59-B502-D9CEFB30D9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B078991-05EA-4B59-B502-D9CEFB30D9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B078991-05EA-4B59-B502-D9CEFB30D9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B078991-05EA-4B59-B502-D9CEFB30D9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1916C50-5323-4314-B0B0-EC3F594EB258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1916C50-5323-4314-B0B0-EC3F594EB258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1916C50-5323-4314-B0B0-EC3F594EB258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1916C50-5323-4314-B0B0-EC3F594EB258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5187E705-099B-4836-B566-0776D51DFE9C}
+	EndGlobalSection
+EndGlobal
