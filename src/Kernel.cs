@@ -216,11 +216,11 @@ public class Kernel : Sys.Kernel {
             for (int i = 0; i <= 100; i++)
             {
                 Console.WriteLine(":(");
-                Console.WriteLine("Your PC ran into a problem and need to restart");
+                Console.WriteLine("A problem that it ran in your device/pc/laptop and need to restart to fix these problems.");
                 Console.WriteLine();
-                Console.WriteLine("For more infomation about this issue and possiable fixes, visit: https://www.github.com/Codedev/TerminalOS [You can create issue]");
+                Console.WriteLine("For more infomation about this issue and possiable fixes, visit: https://kawaiiproject.neocities.org/issues");
                 Console.WriteLine("If you call a support person, give them this info: ");
-                Console.WriteLine("Error Code: " + exception_text);
+                Console.WriteLine("Stop code: " + exception_text);
                 Console.WriteLine("Collecting info: " + i + "%");
                 System.Threading.Thread.Sleep(1000);
                 Console.Clear();
