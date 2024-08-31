@@ -101,7 +101,7 @@ public class Kernel : Sys.Kernel {
             try {
               Console.WriteLine("[!] operation completed successfully.");
             }
-            catch(exeption e.x) {
+            catch(Exeption ex) {
               Console.WriteLine("[!] operation failed");
             }
         case "help":
