@@ -95,7 +95,7 @@ public class Kernel : Sys.Kernel {
         case "restart":
             Sys.Power.Reboot(); // restart too
             break;
-        case "start":
+        case "kawaii_desktop":
             start_system();
         case "cls":
             Console.Clear();
@@ -191,7 +191,7 @@ public class Kernel : Sys.Kernel {
 
         vMWareSVGAII.DoubleBuffer_Clear((uint)Color.Black.ToArgb());
         vMWareSVGAII.DoubleBuffer_SetVRAM(bitmap.rawData, (int)vMWareSVGAII.FrameSize);
-        logView.text = $"Time: {DateTime.Now}\nInstall RAM: {CPU.GetAmountOfRAM()}MB, Video RAM: {vMWareSVGAII.Video_Memory.Size}Bytes";
+        logView.text = $"[Time]: {DateTime.Now}\n[Install RAM]: {CPU.GetAmountOfRAM()}MB, [Video RAM]: {vMWareSVGAII.Video_Memory.Size}Bytes";
         foreach (App app in apps)
         app.Update();
 
