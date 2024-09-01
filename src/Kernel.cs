@@ -74,7 +74,7 @@ public class Kernel : Sys.Kernel {
   }
 
   protected override void Run() {
-    CustomConsole.WriteLineInfo("Loading files...");
+    CustomConsole.WriteLineInfo("["ConsoleColor.Green+check+ConsoleColor.White"]Loading files...");
     Files.LoadFiles();
 
     CustomConsole.WriteLineInfo("Checking for autostart.bat script...");
