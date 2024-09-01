@@ -17,6 +17,7 @@ public class Kernel : Sys.Kernel {
   public static string defaultpassword = "12345678";
   public static string arg1 = "-s";
   public static string arg2 = "--system";
+  public static string check = "OK";
   public static string defaultdirectory = "/system/x86-84";
   public static bool IsInstalled = false;
   public readonly string exception_text;
