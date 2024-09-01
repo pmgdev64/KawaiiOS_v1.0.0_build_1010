@@ -78,12 +78,14 @@ public class Kernel : Sys.Kernel {
     Files.LoadFiles();
 
     CustomConsole.WriteLineInfo("Checking for autostart.bat script...");
-    Console.Write($ defaultuser+"@KawaiiOS: ~$ ");
+    Console.Write($ defaultuser+ConsoleColor.Cyan+"@KawaiiOS"+ConsoleColor.White+": ~$ ");
     var input = Console.ReadLine();
     string[] words = input.Split(' ');
     switch (words[0]) {
         case "cpu":
-            Console.WriteLine($"Vendor: {CPU.GetCPUVendorName()}, Name: {CPU.GetCPUBrandString()}, Frequency: {CPU.GetCPUCycleSpeed()}");
+            Console.WriteLine($ConsoleColor.red+"[Vendor]:"+ConsoleColor.White+" {CPU.GetCPUVendorName()},");
+            Console.WriteLine($ConsoleColor.Blue+"[Name]:"+ConsoleColor.White+" {CPU.GetCPUBrandString()},");
+            Consoke.WriteLine($ConsoleColor.Green+"[Frequency]:"+ConsoleColor.White+" {CPU.GetCPUCycleSpeed()}");
             break;
         case "shutdown":
             Sys.Power.Shutdown(); // shutdown is supported
