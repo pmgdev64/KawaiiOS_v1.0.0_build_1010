@@ -1,4 +1,5 @@
-﻿using Cosmos.Core;
+// don't edit this file
+using Cosmos.Core;
 using Cosmos.System;
 using Cosmos.System.FileSystem;
 using Cosmos.System.FileSystem.VFS;
@@ -49,6 +50,7 @@ public class Kernel : Sys.Kernel {
           0,0,0,0,0,0,0,1,1,0,0,0
       };
 
+  // add your application in here (ex: [Application application])
   LogView logView;
   Clock Clock;
   Notepad notepad;
@@ -83,6 +85,7 @@ public class Kernel : Sys.Kernel {
     var input = Console.ReadLine();
     string[] words = input.Split(' ');
     switch (words[0]) {
+        // add your command in here
         case "cpu":
             Console.WriteLine($ConsoleColor.red+"[Vendor]:"+ConsoleColor.White+" {CPU.GetCPUVendorName()},");
             Console.WriteLine($ConsoleColor.Blue+"[Name]:"+ConsoleColor.White+" {CPU.GetCPUBrandString()},");
@@ -166,12 +169,14 @@ public class Kernel : Sys.Kernel {
       MouseManager.X = screenWidth / 2;
       MouseManager.Y = screenHeight / 2;
 
+      // load your application in here
       logView = new LogView(300, 200, 10, 30);
       Clock = new Clock(200, 200, 400, 200);
       notepad = new Notepad(200, 100, 10, 300);
       file_explorer = new File_explorer(200, 100, 10, 300);
       dock = new Dock();
 
+      // add your application to desktop in here (ex: [apps.add(application)])
       apps.Add(logView);
       apps.Add(Clock);
       apps.Add(notepad);
