@@ -1,6 +1,7 @@
 // this application doesn't run on old version
 using kawaiios.system.CosmosDrawString;
-using Cosmos.FilesSystem.VFS
+using Cosmos.System.FileSystem;
+using Cosmos.System.FilesSystem.VFS;
 using System.Drawing;
 
 namespace kawaiios.application.file_explorer 
@@ -20,6 +21,6 @@ namespace kawaiios.application.file_explorer
         {
             app.update()
         }
-      public 
+      public void read_data() {}
   }
 }
