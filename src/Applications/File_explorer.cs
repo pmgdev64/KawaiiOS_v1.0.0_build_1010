@@ -1,11 +1,11 @@
 // this application doesn't run on old version
+using System.IO;
+using System.Drawing;
 using kawaiios.system.CosmosDrawString;
 using Cosmos.System.FileSystem;
 using Cosmos.System.FilesSystem.VFS;
-using System.IO
-using System.Drawing;
 
-namespace kawaiios.application.file_explorer 
+namespace KawaiiOS.Application.File_Explorer 
 {
   class File_explorer:App {
       int textEachLine;
