@@ -1,5 +1,6 @@
 // this application doesn't run on old version
 using kawaiios.system.CosmosDrawString;
+using Cosmos.FilesSystem.VFS
 using System.Drawing;
 
 namespace kawaiios.application.file_explorer 
@@ -15,6 +16,10 @@ namespace kawaiios.application.file_explorer
             name = "File Explorer";
         }
 
-      public override void _Update() {}
+      public override void _Update() 
+        {
+            app.update()
+        }
+      public 
   }
 }
