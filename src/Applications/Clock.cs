@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
 
-namespace kawaiios.application.clock
+namespace KawaiiOS.Application.Clock
 {
     class Clock : App
     {
