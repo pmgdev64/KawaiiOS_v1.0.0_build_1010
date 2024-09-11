@@ -1,7 +1,7 @@
 // this application doesn't run on old version
 using System.IO;
 using System.Drawing;
-using kawaiios.system.CosmosDrawString;
+using KawaiiOS.System.CosmosDrawString;
 using Cosmos.System.FileSystem;
 using Cosmos.System.FilesSystem.VFS;
 
