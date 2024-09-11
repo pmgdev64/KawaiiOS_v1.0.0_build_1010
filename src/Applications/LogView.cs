@@ -1,4 +1,4 @@
-using kawaiios.system.CosmosDrawString;
+using KawaiiOS.System.CosmosDrawString;
 using System.Drawing;
 
 namespace KawaiiOS.Applications.LogView
