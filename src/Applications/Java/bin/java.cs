@@ -1,6 +1,6 @@
-using system;
-using system.IO;
-using system.Core;
+using System;
+using System.IO;
+using System.Core;
 using Cosmos.System;
 using kawaiios.java.libraries;
 
