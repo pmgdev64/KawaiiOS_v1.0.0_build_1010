@@ -122,8 +122,18 @@ public class Kernel : Sys.Kernel {
             Console.WriteLine("help     - shows this help menu");
             Console.Writeline("install (-s or --system) - install the system into hard disk");
             break;
-        case "install":
-            Console.WriteLine("cannot install because this function isn't added");
+        case "install" + words[1]:
+            switch (words[1]) {
+              case arg1:
+                Console.WriteLine("cannot install because this function isn't added");
+              case arg2:
+                Console.WriteLine("cannot install because this function isn't added");
+              case arg3 + words[2]:
+                switch (words[2]) {
+                  case appname:
+                    Console.WriteLine("cannot install application:" + appname);
+                }
+            }
         default:
             // switch operator works great
             Console.WriteLine($"<"{words[0]}>" is not a recognized command, operable function or scripts");
@@ -135,7 +145,7 @@ public class Kernel : Sys.Kernel {
 
           Batch.Execute(CurrentDirectory + "autostart.bat");
     }    
-    public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../Fonts/SansFont.ttf"), null);
+    public static Font Sansfont = new PCScreenFont(16, 16, System.IO.File.ReadAllBytes(@"../SystemX86/Fonts/SansFont.ttf"), null);
 
     private void start_system() {
       CosmosVFS cosmosVFS = new CosmosVFS();
