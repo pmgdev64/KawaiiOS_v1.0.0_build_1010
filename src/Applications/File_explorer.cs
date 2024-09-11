@@ -2,6 +2,7 @@
 using kawaiios.system.CosmosDrawString;
 using Cosmos.System.FileSystem;
 using Cosmos.System.FilesSystem.VFS;
+using System.IO
 using System.Drawing;
 
 namespace kawaiios.application.file_explorer 
