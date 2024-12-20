@@ -1,4 +1,4 @@
-// don't edit this file
+// copyright © 2024-2025 Pmg Foundation. All right reserved.
 using Cosmos.Core;
 using Cosmos.System;
 using Cosmos.System.FileSystem;
@@ -136,7 +136,7 @@ public class Kernel : Sys.Kernel {
             }
         default:
             // switch operator works great
-            Console.WriteLine($"<"{words[0]}>" is not a recognized command, operable function or scripts");
+            Console.WriteLine($"'{words[0]}' is not a recognized command, operable function or scripts");
             break;
     }
     if (File.Exists(CurrentDirectory + "autostart.bat"))
@@ -207,7 +207,7 @@ public class Kernel : Sys.Kernel {
 
         vMWareSVGAII.DoubleBuffer_Clear((uint)Color.Black.ToArgb());
         vMWareSVGAII.DoubleBuffer_SetVRAM(bitmap.rawData, (int)vMWareSVGAII.FrameSize);
-        logView.text = $"[Time]: {DateTime.Now}\n[Install RAM]: {CPU.GetAmountOfRAM()}MB, [Video RAM]: {vMWareSVGAII.Video_Memory.Size}Bytes";
+        logView.text = $"[Time]: {DateTime.Now}\n[Install RAM]: {CPU.GetAmountOfRAM()}MB, [Video RAM]: {vMWareSVGAII.Video_Memory.Size} Bytes";
         foreach (App app in apps)
         app.Update();
 
@@ -241,8 +241,8 @@ public class Kernel : Sys.Kernel {
             Console.ForegroundColor = ConsoleColor.White;
             for (int i = 0; i <= 100; i++)
             {
-                Console.WriteLine(":(");
-                Console.WriteLine("A problem that it ran in your device/pc/laptop and need to restart to fix these problems.");
+                Console.WriteLine(ascii);
+                Console.WriteLine("A problem that it ran in your Device/PC/Laptop and need to restart to fix these problems.");
                 Console.WriteLine();
                 Console.WriteLine("For more infomation about this issue and possiable fixes, visit: https://kawaiiproject.neocities.org/issues");
                 Console.WriteLine("If you call a support person, give them this info: ");
