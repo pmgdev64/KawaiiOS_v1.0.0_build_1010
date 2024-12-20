@@ -12,6 +12,7 @@
 - Go To <a href="https://kawaiiproject.neocities.org">KawaiiProject</a>
 To Read All User Guides.
 
+# 1. Set Up:
 - This Project Requires The Following Conditions:
   - [x] Cosmos Dev kit (If Compile The Source Code)
   - [x] Vitural Machine Or Real PC (Older Or Newer)
