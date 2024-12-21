@@ -9,10 +9,10 @@
 # KawaiiOS_v1.0.0_build_1010
 - The Operating systems based from cosmos.
 
-- Go To <a href="https://kawaiiproject.neocities.org">KawaiiProject</a>
-To Read All User Guides.
+- A Open-Source Operating System Which It Have More Usefun Features 
 
 # 1. Set Up:
 - This Project Requires The Following Conditions:
   - [x] Cosmos Dev kit (If Compile The Source Code)
   - [x] Vitural Machine Or Real PC (Older Or Newer)
+- Next, You Must Have A Official ISO Image File
