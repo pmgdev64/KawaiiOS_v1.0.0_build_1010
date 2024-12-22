@@ -46,6 +46,9 @@ public class Kernel : Sys.Kernel {
                                .,,,,,,,,,,,,,,,,,,,,,.                            
                                         .,,,,,.";
   public static uint screenHeight = 480;
+  public static List<string> BSODException = new List<string> {
+      "SYSTEM_STOPPED_RESPONSE","INVAILD_CONFIG_FILES","SYSTEM_DISK_EXCEPTION"
+  }();
   public static string defaultuser = "root";
   public static string defaultpassword = "12345678";
   public static string arg1 = "-s";
