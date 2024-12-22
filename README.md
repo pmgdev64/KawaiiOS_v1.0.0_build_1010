@@ -11,7 +11,7 @@
 # KawaiiOS_v1.0.0_build_1010
 - The Operating systems based from cosmos.
 
-- A Open-Source Operating System Which It Have More Usefun Features 
+- A Open-Source Operating System Which It Have More Useful Features 
 
 # 1. Set Up:
 - This Project Requires The Following Conditions:
