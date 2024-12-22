@@ -6,8 +6,14 @@
   </picture>
 </p> 
 
-<a href="#">English | <a href="https://github.com/pmgdev64/KawaiiOS_v1.0.0_build_1010/blob/Public/README_RU.md">Русский</a>
+<a align="center" href="https://github.com/pmgdev64/KawaiiOS_v1.0.0_build_1010/blob/Public/README.md">English | <a align="center"  href="#">Русский</a>
 
 # KawaiiOS_v1.0.0_сборка_1010
 - Операционные системы, основанные на космосе.
 - Операционная система с открытым исходным кодом, которая имеет больше полезных функций
+# 1. Настройка:
+- Для этого проекта требуются следующие условия:
+- [x] Cosmos Dev kit (если компилировать исходный код)
+- [x] Vitural Machine или реальный ПК (старый или новый)
+- [x] Visual Studio 2017 (или новее)
+- Далее, у вас должен быть официальный файл образа ISO
