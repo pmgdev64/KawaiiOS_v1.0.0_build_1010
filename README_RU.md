@@ -9,3 +9,4 @@
 <a href="#">English | <a href="https://github.com/pmgdev64/KawaiiOS_v1.0.0_build_1010/blob/Public/README_RU.md">Русский</a>
 
 # KawaiiOS_v1.0.0_сборка_1010
+- Операционные системы, основанные на космосе.
